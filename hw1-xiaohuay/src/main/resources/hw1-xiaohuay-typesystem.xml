@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>hw1-xiaohuay-typesystem</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <types>
+    <typeDescription>
+      <name>org.apache.uima.model.BaseAnnot</name>
+      <description>Base annotation type for all other annotation types of the system</description>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>srcComponentId</name>
+          <description>ID of the source of the annotation</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>confidence</name>
+          <description>measure of how confidence the annotation is</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.apache.uima.model.Question</name>
+      <description>annotation for each question</description>
+      <supertypeName>org.apache.uima.model.BaseAnnot</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.apache.uima.model.Answer</name>
+      <description>annotation for each question</description>
+      <supertypeName>org.apache.uima.model.BaseAnnot</supertypeName>
+      <features>
+        <featureDescription>
+          <name>isCorrect</name>
+          <description>record whether or not the answer is correct</description>
+          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.apache.uima.model.Token</name>
+      <description>Annotation for each token span in each question and answer</description>
+      <supertypeName>org.apache.uima.model.BaseAnnot</supertypeName>
+    </typeDescription>
+    <typeDescription>
+      <name>org.apache.uima.model.AnswerScore</name>
+      <description>score annotation for each answer</description>
+      <supertypeName>org.apache.uima.model.BaseAnnot</supertypeName>
+      <features>
+        <featureDescription>
+          <name>answer</name>
+          <description>record the answer string to which the score is assigned</description>
+          <rangeTypeName>org.apache.uima.model.Answer</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>org.apache.uima.model.NGram</name>
+      <description>annotation for n-grams</description>
+      <supertypeName>org.apache.uima.model.BaseAnnot</supertypeName>
+      <features>
+        <featureDescription>
+          <name>elements</name>
+          <description/>
+          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
+          <elementType>org.apache.uima.model.Token</elementType>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>
