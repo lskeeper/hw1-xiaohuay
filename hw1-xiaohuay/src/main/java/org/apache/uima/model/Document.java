@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Wed Sep 11 14:37:57 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 21:15:50 EDT 2013 */
 package org.apache.uima.model;
 
 import org.apache.uima.jcas.JCas; 
@@ -9,16 +9,16 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** annotation for each question
+/** 
  * Updated by JCasGen Wed Sep 11 21:15:50 EDT 2013
  * XML source: /Users/xiaohua/git/hw1-xiaohuay/hw1-xiaohuay/src/main/resources/hw1-xiaohuay-typesystem.xml
  * @generated */
-public class Answer extends BaseAnnot {
+public class Document extends BaseAnnot {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Answer.class);
+  public final static int typeIndexID = JCasRegistry.register(Document.class);
   /** @generated
    * @ordered 
    */
@@ -30,23 +30,23 @@ public class Answer extends BaseAnnot {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Answer() {/* intentionally empty block */}
+  protected Document() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public Answer(int addr, TOP_Type type) {
+  public Document(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public Answer(JCas jcas) {
+  public Document(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public Answer(JCas jcas, int begin, int end) {
+  public Document(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -62,21 +62,21 @@ public class Answer extends BaseAnnot {
  
     
   //*--------------*
-  //* Feature: isCorrect
+  //* Feature: docName
 
-  /** getter for isCorrect - gets record whether or not the answer is correct
+  /** getter for docName - gets 
    * @generated */
-  public boolean getIsCorrect() {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
-      jcasType.jcas.throwFeatMissing("isCorrect", "org.apache.uima.model.Answer");
-    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect);}
+  public String getDocName() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_docName == null)
+      jcasType.jcas.throwFeatMissing("docName", "org.apache.uima.model.Document");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Document_Type)jcasType).casFeatCode_docName);}
     
-  /** setter for isCorrect - sets record whether or not the answer is correct 
+  /** setter for docName - sets  
    * @generated */
-  public void setIsCorrect(boolean v) {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
-      jcasType.jcas.throwFeatMissing("isCorrect", "org.apache.uima.model.Answer");
-    jcasType.ll_cas.ll_setBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect, v);}    
+  public void setDocName(String v) {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_docName == null)
+      jcasType.jcas.throwFeatMissing("docName", "org.apache.uima.model.Document");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Document_Type)jcasType).casFeatCode_docName, v);}    
   }
 
     

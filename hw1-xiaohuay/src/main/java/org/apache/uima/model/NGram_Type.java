@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** annotation for n-grams
- * Updated by JCasGen Wed Sep 11 14:37:57 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:15:50 EDT 2013
  * @generated */
 public class NGram_Type extends BaseAnnot_Type {
   /** @generated */
@@ -66,7 +66,7 @@ public class NGram_Type extends BaseAnnot_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
+  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
   }
    
   /** @generated */ 

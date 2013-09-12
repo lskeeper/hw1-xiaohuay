@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** Annotation for each token span in each question and answer
- * Updated by JCasGen Wed Sep 11 14:37:57 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:15:50 EDT 2013
  * XML source: /Users/xiaohua/git/hw1-xiaohuay/hw1-xiaohuay/src/main/resources/hw1-xiaohuay-typesystem.xml
  * @generated */
 public class Token extends BaseAnnot {

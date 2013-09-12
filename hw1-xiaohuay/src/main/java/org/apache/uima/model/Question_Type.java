@@ -11,7 +11,7 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 
 /** annotation for each question
- * Updated by JCasGen Wed Sep 11 14:37:57 EDT 2013
+ * Updated by JCasGen Wed Sep 11 21:15:50 EDT 2013
  * @generated */
 public class Question_Type extends BaseAnnot_Type {
   /** @generated */

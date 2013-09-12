@@ -1,4 +1,3 @@
-
 /* First created by JCasGen Wed Sep 11 14:37:57 EDT 2013 */
 package org.apache.uima.model;
 
@@ -12,9 +11,11 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** annotation for each question
- * Updated by JCasGen Wed Sep 11 14:37:57 EDT 2013
- * @generated */
+/**
+ * annotation for each question Updated by JCasGen Wed Sep 11 14:37:57 EDT 2013
+ * 
+ * @generated
+ */
 public class Answer_Type extends BaseAnnot_Type {
   /** @generated */
   @Override
@@ -35,25 +36,31 @@ public class Answer_Type extends BaseAnnot_Type {
         } else return new Answer(addr, Answer_Type.this);
   	  }
     };
+
   /** @generated */
-  @SuppressWarnings ("hiding")
+  @SuppressWarnings("hiding")
   public final static int typeIndexID = Answer.typeIndexID;
-  /** @generated 
-     @modifiable */
-  @SuppressWarnings ("hiding")
+
+  /**
+   * @generated
+   * @modifiable
+   */
+  @SuppressWarnings("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("org.apache.uima.model.Answer");
- 
+
   /** @generated */
   final Feature casFeat_isCorrect;
+
   /** @generated */
-  final int     casFeatCode_isCorrect;
-  /** @generated */ 
+  final int casFeatCode_isCorrect;
+
+  /** @generated */
   public boolean getIsCorrect(int addr) {
         if (featOkTst && casFeat_isCorrect == null)
       jcas.throwFeatMissing("isCorrect", "org.apache.uima.model.Answer");
     return ll_cas.ll_getBooleanValue(addr, casFeatCode_isCorrect);
   }
-  /** @generated */    
+  /** @generated */
   public void setIsCorrect(int addr, boolean v) {
         if (featOkTst && casFeat_isCorrect == null)
       jcas.throwFeatMissing("isCorrect", "org.apache.uima.model.Answer");
@@ -63,8 +70,11 @@ public class Answer_Type extends BaseAnnot_Type {
 
 
 
-  /** initialize variables to correspond with Cas Type and Features
-	* @generated */
+  /**
+   * initialize variables to correspond with Cas Type and Features
+   * 
+   * @generated
+   */
   public Answer_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
@@ -75,7 +85,3 @@ public class Answer_Type extends BaseAnnot_Type {
 
   }
 }
-
-
-
-    
